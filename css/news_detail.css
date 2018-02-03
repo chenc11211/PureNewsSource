@@ -1,0 +1,127 @@
+
+/*顶部导航条*/
+.header .navbar-header{
+    text-align: center;
+    height: 50px;
+}
+.header form .input-group{
+    padding-left: 20px;
+}
+/*菜单按钮居左*/
+.header .navbar-header button.navbar-toggle{
+    float: left;
+}
+/*小屏logo图*/
+.header .navbar-header .navbar-brand:first-of-type{
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: -30px;
+}
+/*大屏logo图*/
+.header .navbar-header .navbar-brand:last-of-type{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*巨幕样式*/
+.jumbotron{
+    margin-top: 50px;
+    padding: 80px 0;
+}
+
+a:visited{
+    color: #338fd0;
+}
+
+/*主体*/
+.news_title{
+
+    padding-bottom:10px;
+}
+#title{
+    text-align:center;
+    padding:20px 0;
+    font-size:24px;
+}
+#date{
+    color:#666;
+    font-size:12px;
+    overflow: hidden;
+}
+.news_content{
+
+    margin:0 auto;
+}
+/*评论*/
+#news_comment{
+    padding-bottom: 1em;
+}
+#comment_tab1{
+    padding: 0.5em;
+    border: 1px solid #dddddd;
+}
+#comment_tab1 p{
+    margin: 0;
+}
+.comment_item{
+    border: 1px solid #dddddd;
+    margin-top: 0.5em;
+    line-height: 2em;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.comment_info{
+    padding: 0.5em;
+    background-color: #f2f7ff;
+}
+.comment_info .comment_time{
+    float: right;
+    color: #666;
+}
+
+.comment_content{
+    padding:0 1em;
+}
+.comment_content .content{
+    padding:0.5em 0;
+}
+.comment_content .reply{
+    padding: 0.5em;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    margin-bottom: 0.5em;
+}
+.comment_content .reply .reply_content{
+    color: #999999;
+}
+.comment_content .attitude{
+    text-align: right;
+}
+.comment_content .attitude span{
+    padding-left: 1em;
+}
+
+/*用户名颜色样式*/
+.user_name,.user_from,.reply_user{
+    font-weight: bold;
+    color: #1b6d85;
+}
+
+@media (min-width: 768px) {
+    .jumbotron{
+        margin-top: 50px;
+        padding: 30px 0;
+    }
+    body{
+        font-size: 16px;
+    }
+    #title{
+        font-size:30px;
+    }
+    #date,div.path{
+        font-size:14px;
+    }
+
+
+}

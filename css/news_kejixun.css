@@ -1,0 +1,109 @@
+/*顶部导航条*/
+.header .navbar-header{
+    text-align: center;
+    height: 50px;
+}
+.header form .input-group{
+    padding-left: 20px;
+}
+/*菜单按钮居左*/
+.header .navbar-header button.navbar-toggle{
+    float: left;
+}
+/*小屏logo图*/
+.header .navbar-header .navbar-brand:first-of-type{
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: -30px;
+}
+/*大屏logo图*/
+.header .navbar-header .navbar-brand:last-of-type{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*巨幕样式*/
+.jumbotron{
+    margin-top: 50px;
+    padding: 80px 0;
+    color: white;
+}
+.jumbotron{
+    background: #1a0640 url("../img/kejixun.jpg") no-repeat center 20px;
+}
+/*路径*/
+.path a:visited{
+    color: #338fd0;
+}
+
+/*主体内容*/
+.main{
+    padding: 10px 0 30px 0;
+}
+.main .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.load-more{
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.list-items{
+    padding: 15px 15px 5px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.list-items:hover{
+    background-color: #f6f6f6;
+}
+
+.main .list-items .list-con{
+    width:100%;
+}
+.list-items .title{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+    /*关键字图标*/
+.main .keywords i{
+    padding-right: 10px;
+}
+    /*关键字*/
+.list-items .keywords{
+    font-size: 12px;
+    color: #999;
+}
+     /*日期*/
+.list-items .times,.list-items .time{
+    font-size: 12px;
+    color: #bbb;
+    text-align: right;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .jumbotron{
+        margin-top: 50px;
+        padding: 30px 0;
+    }
+    body{
+        font-size: 16px;
+    }
+    div.path{
+        font-size: 14px;
+    }
+    .list-items .title{
+        font-size: 18px;
+    }
+    .list-items .keywords{
+        font-size: 14px;
+    }
+    .list-items .times,.list-items .time{
+        font-size: 14px;
+    }
+
+}

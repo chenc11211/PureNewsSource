@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>快科技新闻</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/news_kuaikeji.css">
+    <script src="js/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+<!--顶部导航条-->
+<div class="header">
+    <div class="navbar navbar-default navbar-fixed-top" id="header_nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand visible-xs-inline-block"><img src="img/logo.png" alt="" id="logo_img"></a>
+                <a href="#" class="navbar-brand hidden-xs">
+                    <img src="img/logo_mini.png" alt="">
+                </a>
+                <div class="dropdown navbar-toggle">
+                    <span data-toggle="dropdown" id="classify-name">
+                        全部
+                    </span>
+                    <ul class="dropdown-menu" id="classify-nav">
+                        <li id="all-nav" class="active"><a href="#" data-toggle="tab">全部</a></li>
+                        <li id="hardware-nav"><a href="#" data-toggle="tab">硬件</a></li>
+                        <li id="software-nav"><a href="#" data-toggle="tab">软件</a></li>
+                        <li id="phone-nav"><a href="#" data-toggle="tab">手机</a></li>
+                        <li id="science-nav"><a href="#" data-toggle="tab">科学</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active"><a href="news_kuaikeji.html">快科技</a></li>
+                    <li><a href="news_ithome.html">IT之家</a></li>
+                    <li><a href="news_kejixun.html">科技讯</a></li>
+                </ul>
+                <form action="" class="navbar-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <input type="submit" class="btn btn-default" value="查找">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--巨幕标题-->
+<div class="jumbotron">
+    <div class="container hidden-xs">
+        <h3>快科技</h3>
+        <p>最新、最有趣的科技资讯</p>
+    </div>
+</div>
+
+
+<!--路径-->
+<div class="path container hidden-xs">
+    <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li class="active">快科技新闻</li>
+    </ol>
+</div>
+
+<!--主体-->
+<div class="main">
+    <div class="main-tabs container">
+        <ul class="nav nav-tabs hidden-xs">
+            <li id="all" class="active"><a href="#all-news" data-toggle="tab">全部</a></li>
+            <li id="hardware"><a href="#hardware-news" data-toggle="tab">硬件</a></li>
+            <li id="software"><a href="#software-news" data-toggle="tab">软件</a></li>
+            <li id="phone"><a href="#phone-news" data-toggle="tab">手机</a></li>
+            <li id="science"><a href="#science-news" data-toggle="tab">科学</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="all-news">
+                <div class="container-fluid" id="all-content">
+                    <!--新闻列表-->
+                    <div class="container-fluid">
+                        <div class="row" id="all-news-list">
+                            <div class="col-lg-12" style="text-align: center"><img src="img/loading.gif" alt=""></div>
+                        </div>
+                    </div>
+                    <!--分页-->
+                    <div class="page-num">
+                        <ul class="pagination pagination-sm">
+                            <!--<li><a href="">&laquo;</a></li>-->
+                            <li class="active" id="pagination-first"><a href="">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <!--<li><a href="">&raquo;</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="hardware-news">
+                <div class="container-fluid">
+                    <div class="row" id="hardware-news-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="software-news">
+                <div class="container-fluid">
+                    <div class="row" id="software-news-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="phone-news">
+                <div class="container-fluid">
+                    <div class="row" id="phone-news-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="science-news">
+                <div class="container-fluid">
+                    <div class="row" id="science-news-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--页脚-->
+<div class="footer">
+    <p><a href="#">联系我们</a> | <a href="#issue" data-toggle="modal">问题反馈</a> | <a href="">收藏本页</a> | <a href="#">返回顶部</a></p>
+    <p>Copyright &copy; 2017-09-05</p>
+</div>
+
+<!--反馈框-->
+<div class="modal fade" id="issue">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4>问题反馈 <span class="close" data-dismiss="modal">&times;</span></h4>
+            </div>
+            <div class="modal-body">
+                <div id="error_tips" style="color: #e00"></div>
+                <form action="" method="post" id="form_issue">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <label class="btn btn-default" for="issue_title">概述：</label>
+                        </div>
+                        <input type="text" id="issue_title" class="form-control" name="issue_title">
+                    </div>
+
+                    <label class="" for="issue_content">详情：</label>
+                    <textarea name="issue_content" class="form-control" id="issue_content" rows="6" style="width:100%;resize: none"></textarea>
+
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <label class="btn btn-default" for="contact">联系方式：</label>
+                        </div>
+                        <input type="text" id="contact" class="form-control" name="contact">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="issue_submit" style="width: 100%">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/news_kuaikeji.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+
+/*顶部导航条*/
+.header .navbar-header{
+    text-align: center;
+    height: 50px;
+}
+.header form .input-group{
+    padding-left: 20px;
+}
+      /*菜单按钮居左*/
+.header .navbar-header .navbar-toggle{
+    float: left;
+}
+      /*小屏logo图*/
+.header .navbar-header .navbar-brand:first-of-type{
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: -30px;
+}
+      /*大屏logo图*/
+.header .navbar-header .navbar-brand:last-of-type{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+/*轮播图顶部外边距*/
+#hot-carousel{
+    margin-top: 50px;
+}
+/*轮播图按钮居中*/
+#hot-carousel img{
+    margin: 0 auto;
+}
+.carousel-control i{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.carousel-control span{
+    font-size: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*主体内容*/
+
+.main h3{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.main p{
+    margin-left: 10px;
+    text-indent: 24px;
+}
+      /*前往原站点链接样式*/
+.main .origin{
+    text-align: right;
+    margin-right: 30px;
+}
+.main .origin a:visited{
+    color: #338fd0;
+}
+      /*站点列表边距*/
+.main .website-list{
+    padding: 30px 15px 30px 15px;
+}
+
+/*大屏字体设置*/
+@media (min-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    .main h3{
+        font-size: 26px;
+    }
+
+}

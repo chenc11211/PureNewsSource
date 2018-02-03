@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body style="height: 100%">
+<!--顶部导航条-->
+<div class="header">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <span class="navbar-toggle" data-toggle="collapse" data-target="#navbar-nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+                <a href="#" class="navbar-brand visible-xs-inline-block"><img src="img/logo.png" alt="" id="logo_img"></a>
+                <a href="#" class="navbar-brand hidden-xs">
+                    <img src="img/logo_mini.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href=""><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-info-sign"></span> 关于</a></li>
+                </ul>
+                <form action="" class="navbar-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-btn">
+                            <input type="submit" class="btn btn-default" value="查找">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div class="carousel slide" id="hot-carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#hot-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#hot-carousel" data-slide-to="1"></li>
+        <li data-target="#hot-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active" style="background-color: #1c2d3f">
+            <a href=""><img src="img/hot_news_1.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <p>Intel 12核心首次开盖：噩耗确认！心碎</p>
+            </div>
+        </div>
+        <div class="item" style="background-color: #fff">
+            <a href=""><img src="img/hot_news_2.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <p>微软抓狂！Windows 10最新版悲催</p>
+            </div>
+        </div>
+        <div class="item" style="background-color: #b0b2a4">
+            <a href=""><img src="img/hot_news_3.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <p>20TB硬盘来了！但是玻璃的你敢用吗？</p>
+            </div>
+        </div>
+    </div>
+    <a href="#hot-carousel" class="carousel-control left" data-slide="prev"><span>&lang;</span><i></i></a>
+    <a href="#hot-carousel" class="carousel-control right" data-slide="next"><span>&rang;</span><i></i></a>
+</div>
+<!--主体-->
+<div class="main">
+    <div class="container website-list">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="thumbnail">
+                    <a href="news_kuaikeji.html">
+                        <img src="img/kkg_icon.png" alt="" >
+                    </a>
+                    <div>
+                        <h3>快科技</h3>
+                        <p>全球最新科技资讯专业发布平台。快科技(原驱动之家)为您提供第一手的科技新闻资讯、产品评测、驱动下载等服务。</p>
+                        <div class="origin">
+                            <a href="http://www.mydrivers.com/" class="origin">前往原站点>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="thumbnail">
+                    <a href="news_ithome.html">
+                        <img src="img/ithome_icon.png" alt="">
+                    </a>
+                    <div>
+                        <h3>IT之家</h3>
+                        <p>IT科技门户网站。快速精选IT新闻，实时报道科技周边，关注苹果iOS、谷歌Android等数码潮流、技术资讯、攻略教程。</p>
+                        <div class="origin">
+                            <a href="https://www.ithome.com/" class="origin">前往原站点>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="thumbnail">
+                    <a href="news_kejixun.html">
+                        <img src="img/kejixun_icon.png" alt="">
+                    </a>
+                    <div>
+                        <h3>科技讯</h3>
+                        <p>综合科技生活门户网站-IT科技新闻,黑科技,探索发现,科学网。关注科技以及科技在生活中的应用，传播和普及科普知识。</p>
+                        <div class="origin">
+                            <a href="http://www.kejixun.com/" class="origin">前往原站点>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="footer">
+    <p><a href="#">联系我们</a> | <a href="#issue" data-toggle="modal">问题反馈</a> | <a href="#">返回顶部</a></p>
+    <p>Copyright &copy; 2017-09-05</p>
+</div>
+
+<!--反馈框-->
+<div class="modal fade" id="issue">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4>问题反馈 <span class="close" data-dismiss="modal">&times;</span></h4>
+            </div>
+            <div class="modal-body">
+                <div id="error_tips" style="color: #e00"></div>
+                <form action="" method="post" id="form_issue">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <label class="btn btn-default" for="issue_title">概述：</label>
+                        </div>
+                        <input type="text" id="issue_title" class="form-control" name="issue_title">
+                    </div>
+
+                        <label class="" for="issue_content">详情：</label>
+                        <textarea name="issue_content" class="form-control" id="issue_content" rows="6" style="width:100%;resize: none"></textarea>
+
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <label class="btn btn-default" for="contact">联系方式：</label>
+                        </div>
+                        <input type="text" id="contact" class="form-control" name="contact">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="issue_submit" style="width: 100%">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

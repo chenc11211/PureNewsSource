@@ -1,0 +1,100 @@
+/*顶部导航条*/
+.header .navbar-header{
+    text-align: center;
+    height: 50px;
+}
+.header form .input-group{
+    padding-left: 20px;
+}
+    /*菜单按钮居左*/
+.header .navbar-header button.navbar-toggle{
+    float: left;
+}
+    /*分类按钮边距*/
+.header .navbar-header div.navbar-toggle{
+    padding: 6px 10px 6px 10px;
+}
+    /*小屏logo图*/
+.header .navbar-header .navbar-brand:first-of-type{
+    float: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+    /*大屏logo图*/
+.header .navbar-header .navbar-brand:last-of-type{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*巨幕样式*/
+.jumbotron{
+    margin-top: 50px;
+    padding: 80px 0;
+
+}
+.jumbotron{
+    background: #2b7cef url("../img/kuaikeji.jpg") no-repeat center 20px;
+}
+.jumbotron{
+    color: white;
+}
+
+/*路径*/
+.path a:visited{
+    color: #338fd0;
+}
+
+/*主体内容*/
+.main{
+    padding-bottom: 20px;
+}
+.main .container-fluid{
+    padding: 0;
+}
+   /*标签页*/
+.main .nav-tabs li a{
+    padding: 8px 12px;
+}
+.main .col-md-6{
+    padding: 0;
+}
+    /*新闻标题边距*/
+.main .col-md-6 .titl{
+    margin-right: -30px;
+    padding-right: 0;
+}
+    /*新闻日期样式*/
+.main .col-md-6 .t{
+    float:right;
+    color: #999;
+}
+.main .page-num{
+    text-align: center;
+}
+    /*新闻列表*/
+#all-news-list li,#hardware-news-list li,#software-news-list li,#phone-news-list li,#science-news-list li{
+    padding: 10px 15px;
+    list-style: none;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    div.path{
+        font-size: 14px;
+    }
+    .main .col-md-6{
+        padding: 0 15px;
+    }
+    .jumbotron{
+        margin-top: 50px;
+        padding: 30px 0;
+    }
+}
+
+
+
+
